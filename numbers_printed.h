@@ -1,20 +1,27 @@
 char zero[9][6];
 char one[9][6];
 char two[9][6];
+char three[9][6];
 
 int definePrintableNumbers(){
-    // complete column
-    zero[0][0] = '['; zero[1][0] = ']'; zero[2][0] = '['; zero[3][0] = ']'; zero[4][0] = '['; zero[5][0] = ']'; zero[6][0] = '['; zero[7][0] = ']';
+    int completeRow(char var[9][6], int column){
+        var[0][column] = '['; var[1][column] = ']'; var[2][column] = '['; var[3][column] = ']'; var[4][column] = '['; var[5][column] = ']'; var[6][column] = '['; var[7][column] = ']';
 
-    // left and right only column
-    zero[0][1] = '['; zero[1][1] = ']'; zero[2][1] = ' '; zero[3][1] = ' '; zero[4][1] = ' '; zero[5][1] = ' '; zero[6][1] = '['; zero[7][1] = ']';
+        return 0;
+    };
 
-    zero[0][2] = '['; zero[1][2] = ']'; zero[2][2] = ' '; zero[3][2] = ' '; zero[4][2] = ' '; zero[5][2] = ' '; zero[6][2] = '['; zero[7][2] = ']';
+    int leftAndRightRow(char var[9][6], int column){
+        var[0][column] = '['; var[1][column] = ']'; var[2][column] = ' '; var[3][column] = ' '; var[4][column] = ' '; var[5][column] = ' '; var[6][column] = '['; var[7][column] = ']';
 
-    zero[0][3] = '['; zero[1][3] = ']'; zero[2][3] = ' '; zero[3][3] = ' '; zero[4][3] = ' '; zero[5][3] = ' '; zero[6][3] = '['; zero[7][3] = ']';
+        return 0;
+    };
 
-    zero[0][4] = '['; zero[1][4] = ']'; zero[2][4] = '['; zero[3][4] = ']'; zero[4][4] = '['; zero[5][4] = ']'; zero[6][4] = '['; zero[7][4] = ']';
-
+    // prints zero
+    completeRow(zero, 0);
+    leftAndRightRow(zero, 1);
+    leftAndRightRow(zero, 2);
+    leftAndRightRow(zero, 3);
+    completeRow(zero, 4);
 
 
     one[0][0] = ' '; one[1][0] = ' '; one[2][0] = ' '; one[3][0] = '['; one[4][0] = ']'; one[5][0] = ' '; one[6][0] = ' '; one[7][0] = ' ';
@@ -42,6 +49,20 @@ int definePrintableNumbers(){
     two[0][4] = '['; two[1][4] = ']'; two[2][4] = '['; two[3][4] = ']'; two[4][4] = '['; two[5][4] = ']'; two[6][4] = '['; two[7][4] = ']';
 
 
+    three[0][0] = '['; three[1][0] = ']'; three[2][0] = '['; three[3][0] = ']'; three[4][0] = '['; three[5][0] = ']'; three[6][0] = '['; three[7][0] = ']';
+
+    three[0][1] = ' '; three[1][1] = ' '; three[2][1] = ' '; three[3][1] = ' '; three[4][1] = ' '; three[5][1] = ' '; three[6][1] = '['; three[7][1] = ']';
+
+    three[0][2] = '['; three[1][2] = ']'; three[2][2] = '['; three[3][2] = ']'; three[4][2] = '['; three[5][2] = ']'; three[6][2] = '['; three[7][2] = ']';
+
+    three[0][3] = ' '; three[1][3] = ' '; three[2][3] = ' '; three[3][3] = ' '; three[4][3] = ' '; three[5][3] = ' '; three[6][3] = '['; three[7][3] = ']';
+
+    three[0][4] = '['; three[1][4] = ']'; three[2][4] = '['; three[3][4] = ']'; three[4][4] = '['; three[5][4] = ']'; three[6][4] = '['; three[7][4] = ']';
+
+
+    /*four[0][0] = '['; four[1][0] = ']'; four[2][0] = ' ' four[3][0] = ' ' four[4][0] = ' four[5][0] = ' ' four[6][0] = '['; four[7][0] = ']';*/
+    /*four[0][1] = '['; four[1][1] = ']'; four[2][1] = ' '; four[3][1] = ' '; four[4][1] = ' '; four[5][1] = ' '; four[6][1] = '['; four[7][1] = ']';*/
+    /*three[0][2] = '['; three[1][2] = ']'; three[2][2] = '['; three[3][2] = ']'; three[4][2] = '['; three[5][2] = ']'; three[6][2] = '['; three[7][2] = ']';*/
 };
 
 char three1[9] = "[][][][]";

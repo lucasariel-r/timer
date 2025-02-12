@@ -33,7 +33,7 @@ int main(){
 
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 8; j++){
-                printf("%c", two[j][i]);
+                printf("%c", zero[j][i]);
             };
             printf("\n");
         };
