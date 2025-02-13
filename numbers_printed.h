@@ -11,36 +11,36 @@ char nine[9][6];
 char twoPoints[9][6];
 
 int definePrintableNumbers(){
-    int completeRow(char var[9][6], int column){
-        var[0][column] = '['; var[1][column] = ']'; var[2][column] = '['; var[3][column] = ']'; var[4][column] = '['; var[5][column] = ']'; var[6][column] = '['; var[7][column] = ']';
+    int completeRow(char var[9][6], int row){
+        var[0][row] = '['; var[1][row] = ']'; var[2][row] = '['; var[3][row] = ']'; var[4][row] = '['; var[5][row] = ']'; var[6][row] = '['; var[7][row] = ']';
 
         return 0;
     };
 
-    int leftAndRightRow(char var[9][6], int column){
-        var[0][column] = '['; var[1][column] = ']'; var[2][column] = ' '; var[3][column] = ' '; var[4][column] = ' '; var[5][column] = ' '; var[6][column] = '['; var[7][column] = ']';
+    int leftAndRightRow(char var[9][6], int row){
+        var[0][row] = '['; var[1][row] = ']'; var[2][row] = ' '; var[3][row] = ' '; var[4][row] = ' '; var[5][row] = ' '; var[6][row] = '['; var[7][row] = ']';
 
         return 0;
     };
 
-    int atCenterRow(char var[9][6], int column){
-        var[0][column] = ' '; var[1][column] = ' '; var[2][column] = ' '; var[3][column] = '['; var[4][column] = ']'; var[5][column] = ' '; var[6][column] = ' '; var[7][column] = ' ';
+    int atCenterRow(char var[9][6], int row){
+        var[0][row] = ' '; var[1][row] = ' '; var[2][row] = ' '; var[3][row] = '['; var[4][row] = ']'; var[5][row] = ' '; var[6][row] = ' '; var[7][row] = ' ';
     };
 
-    int justLeftRow(char var[9][6], int column){
-        var[0][column] = '['; var[1][column] = ']'; var[2][column] = ' '; var[3][column] = ' '; var[4][column] = ' '; var[5][column] = ' '; var[6][column] = ' '; var[7][column] = ' ';
+    int justLeftRow(char var[9][6], int row){
+        var[0][row] = '['; var[1][row] = ']'; var[2][row] = ' '; var[3][row] = ' '; var[4][row] = ' '; var[5][row] = ' '; var[6][row] = ' '; var[7][row] = ' ';
 
         return 0;
     };
 
-    int justRightRow(char var[9][6], int column){
-        var[0][column] = ' '; var[1][column] = ' '; var[2][column] = ' '; var[3][column] = ' '; var[4][column] = ' '; var[5][column] = ' '; var[6][column] = '['; var[7][column] = ']';
+    int justRightRow(char var[9][6], int row){
+        var[0][row] = ' '; var[1][row] = ' '; var[2][row] = ' '; var[3][row] = ' '; var[4][row] = ' '; var[5][row] = ' '; var[6][row] = '['; var[7][row] = ']';
 
         return 0;
     };
 
-    int spaceRow(char var[9][6], int column){
-        var[0][column] = ' '; var[1][column] = ' '; var[2][column] = ' '; var[3][column] = ' '; var[4][column] = ' '; var[5][column] = ' '; var[6][column] = ' '; var[7][column] = ' ';
+    int spaceRow(char var[9][6], int row){
+        var[0][row] = ' '; var[1][row] = ' '; var[2][row] = ' '; var[3][row] = ' '; var[4][row] = ' '; var[5][row] = ' '; var[6][row] = ' '; var[7][row] = ' ';
 
         return 0;
     };

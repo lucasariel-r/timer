@@ -1,5 +1,5 @@
-clear;
-gcc code.c -o code -lm;
-./code
-rm -rf code
+clear &&\
+gcc code.c -o code -lm&&\
+./code&&\
+rm -rf code;
 
